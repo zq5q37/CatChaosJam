@@ -30,8 +30,11 @@ namespace Platformer.Mechanics
 
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
-        /*internal new*/ public Collider2D collider2d;
-        /*internal new*/ public AudioSource audioSource;
+        /*internal new*/
+        public Collider2D collider2d;
+        /*internal new*/
+        public AudioSource audioSource;
+        public AudioClip meowAudio; // optional audio when interacting
         public Health health;
         public bool controlEnabled = true;
 
@@ -56,7 +59,7 @@ namespace Platformer.Mechanics
 
             m_MoveAction = InputSystem.actions.FindAction("Player/Move");
             m_JumpAction = InputSystem.actions.FindAction("Player/Jump");
-            
+
             m_MoveAction.Enable();
             m_JumpAction.Enable();
         }
@@ -80,6 +83,10 @@ namespace Platformer.Mechanics
             }
             UpdateJumpState();
             base.Update();
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                audioSource.PlayOneShot(meowAudio);
+            }
         }
 
         void UpdateJumpState()

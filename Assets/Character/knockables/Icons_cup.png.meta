@@ -1,0 +1,420 @@
+fileFormatVersion: 2
+guid: 124f2f71ed468894b9803ac37a657e79
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 403793716036207294
+    second: Icons_cup_0
+  - first:
+      213: 6851995442974262909
+    second: Icons_cup_1
+  - first:
+      213: -5908669688908520144
+    second: Icons_cup_2
+  - first:
+      213: 8300088273259066897
+    second: Icons_cup_3
+  - first:
+      213: -6801215415983213386
+    second: Icons_cup_4
+  - first:
+      213: -4640720861669650640
+    second: Icons_cup_5
+  - first:
+      213: -3285491497151503272
+    second: Icons_cup_6
+  - first:
+      213: -4707870485143225989
+    second: Icons_cup_7
+  - first:
+      213: -7233221707743725159
+    second: Icons_cup_8
+  - first:
+      213: 2442918538782114103
+    second: Icons_cup_9
+  - first:
+      213: 4097151439433048257
+    second: Icons_cup_10
+  - first:
+      213: -8288294509973271338
+    second: Icons_cup_11
+  - first:
+      213: 2251659255123582491
+    second: Icons_cup_12
+  - first:
+      213: 7956893900164721587
+    second: Icons_cup_13
+  - first:
+      213: -4580472530470965048
+    second: Icons_cup_14
+  - first:
+      213: -6535469254379191496
+    second: Icons_cup_15
+  - first:
+      213: 1589474643786725883
+    second: Icons_cup_16
+  - first:
+      213: -468721458710948169
+    second: Icons_cup_17
+  - first:
+      213: 5528615409538484523
+    second: Icons_cup_18
+  - first:
+      213: -5609737821219248788
+    second: Icons_cup_19
+  - first:
+      213: -429152704342694336
+    second: Icons_cup_20
+  - first:
+      213: 3227007532037792979
+    second: Icons_cup_21
+  - first:
+      213: 5378197996078690659
+    second: Icons_cup_22
+  - first:
+      213: 8328296353540946655
+    second: Icons_cup_23
+  - first:
+      213: -7886428937285533007
+    second: Icons_cup_24
+  - first:
+      213: 3990880282482534608
+    second: Icons_cup_25
+  - first:
+      213: 3044156760515500470
+    second: Icons_cup_26
+  - first:
+      213: -2265132930526012463
+    second: Icons_cup_27
+  - first:
+      213: -2157236702463864316
+    second: Icons_cup_28
+  - first:
+      213: 3471691941104378109
+    second: Icons_cup_29
+  - first:
+      213: 1537732648757417384
+    second: Icons_cup_30
+  - first:
+      213: -1740824705413512097
+    second: Icons_cup_31
+  - first:
+      213: -5343950948267657605
+    second: Icons_cup_32
+  - first:
+      213: -5261204985256108201
+    second: Icons_cup_33
+  - first:
+      213: 1723845113670845426
+    second: Icons_cup_34
+  - first:
+      213: 8761432237321572461
+    second: Icons_cup_35
+  - first:
+      213: -2730407992527861597
+    second: Icons_cup_36
+  - first:
+      213: 4162385303024902750
+    second: Icons_cup_37
+  - first:
+      213: -4573106889368918695
+    second: Icons_cup_38
+  - first:
+      213: 6238017568268535792
+    second: Icons_cup_39
+  - first:
+      213: 2768173565934795680
+    second: Icons_cup_40
+  - first:
+      213: 223595935974623475
+    second: Icons_cup_41
+  - first:
+      213: 5964824455592471501
+    second: Icons_cup_42
+  - first:
+      213: 3716916741224779578
+    second: Icons_cup_43
+  - first:
+      213: 430551011461317913
+    second: Icons_cup_44
+  - first:
+      213: -1642342068950721732
+    second: Icons_cup_45
+  - first:
+      213: -8119283210029556012
+    second: Icons_cup_46
+  - first:
+      213: 8429190674160861954
+    second: Icons_cup_47
+  - first:
+      213: -355136620795184779
+    second: Icons_cup_48
+  - first:
+      213: 3084973023959293836
+    second: Icons_cup_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icons_cup_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 25
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb28fdece309a9500800000000000000
+      internalID: 403793716036207294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icons_cup_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 25
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76831d4d8d271f50800000000000000
+      internalID: 6851995442974262909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icons_cup_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 25
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0356d713930300ea0800000000000000
+      internalID: -5908669688908520144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icons_cup_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116fdfb0f46df2370800000000000000
+      internalID: 8300088273259066897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icons_cup_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 4
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4f8611d9a3d91a0800000000000000
+      internalID: -6801215415983213386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icons_cup_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 4
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f8f62c6f8d89fb0800000000000000
+      internalID: -4640720861669650640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1ca7997b025f2734999327e77c3c3448
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Icons_cup_0: 403793716036207294
+      Icons_cup_1: 6851995442974262909
+      Icons_cup_2: -5908669688908520144
+      Icons_cup_3: 8300088273259066897
+      Icons_cup_4: -6801215415983213386
+      Icons_cup_5: -4640720861669650640
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

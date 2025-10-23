@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace Platformer.Mechanics
 {
@@ -16,6 +17,11 @@ namespace Platformer.Mechanics
         private PlayerController player; // reference to player when in range
 
         public AudioClip ouch; // optional audio when interacting
+        public AudioClip drop_sound; // optional audio when interacting
+
+
+        public UnityEvent<int> increaseScoreEvent;
+
 
         void Awake()
         {
@@ -59,8 +65,12 @@ namespace Platformer.Mechanics
             Debug.Log("Player interacted with enemy!");
 
             // Play sound
-            if (_audio && ouch)
+            if (_audio && ouch && drop_sound)
+            {
                 _audio.PlayOneShot(ouch);
+                _audio.PlayOneShot(drop_sound);
+            }
+
 
             // Make enemy fall
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -74,8 +84,9 @@ namespace Platformer.Mechanics
             if (_collider != null)
                 _collider.enabled = false;
 
-            // Optional: destroy after 3 seconds
-            Destroy(gameObject, 3f);
+            increaseScoreEvent.Invoke(1);
+            // Optional: destroy after 4 seconds
+            Destroy(gameObject, 4f);
         }
     }
 }

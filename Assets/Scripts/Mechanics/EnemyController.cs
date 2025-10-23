@@ -1,55 +1,64 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Platformer.Gameplay;
-using UnityEngine;
-using static Platformer.Core.Simulation;
+﻿using UnityEngine;
 
 namespace Platformer.Mechanics
 {
     /// <summary>
-    /// A simple controller for enemies. Provides movement control over a patrol path.
+    /// Enemy that the player can walk behind but interact with when nearby.
     /// </summary>
-    [RequireComponent(typeof(AnimationController), typeof(Collider2D))]
+    [RequireComponent(typeof(BoxCollider2D))]
     public class EnemyController : MonoBehaviour
     {
-        public PatrolPath path;
-        public AudioClip ouch;
-
-        internal PatrolPath.Mover mover;
-        internal AnimationController control;
-        internal Collider2D _collider;
+        internal BoxCollider2D _collider;
         internal AudioSource _audio;
-        SpriteRenderer spriteRenderer;
+        private SpriteRenderer _spriteRenderer;
 
-        public Bounds Bounds => _collider.bounds;
+        private bool playerNearby = false;
+        private PlayerController player; // reference to player when in range
+
+        public AudioClip ouch; // optional audio when interacting
 
         void Awake()
         {
-            control = GetComponent<AnimationController>();
-            _collider = GetComponent<Collider2D>();
+            _collider = GetComponent<BoxCollider2D>();
+            _collider.isTrigger = true; // ensure it’s a trigger
             _audio = GetComponent<AudioSource>();
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        void OnCollisionEnter2D(Collision2D collision)
+        void OnTriggerEnter2D(Collider2D collision)
         {
-            var player = collision.gameObject.GetComponent<PlayerController>();
+            player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
-                var ev = Schedule<PlayerEnemyCollision>();
-                ev.player = player;
-                ev.enemy = this;
+                playerNearby = true;
+                Debug.Log("Player entered enemy trigger area.");
+            }
+        }
+
+        void OnTriggerExit2D(Collider2D collision)
+        {
+            var exitingPlayer = collision.GetComponent<PlayerController>();
+            if (exitingPlayer != null)
+            {
+                playerNearby = false;
+                player = null;
+                Debug.Log("Player exited enemy trigger area.");
             }
         }
 
         void Update()
         {
-            if (path != null)
+            if (playerNearby && Input.GetKeyDown(KeyCode.K))
             {
-                if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
-                control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
+                Interact();
             }
         }
 
+        void Interact()
+        {
+            Debug.Log("Player interacted with enemy!");
+            if (_audio && ouch) _audio.PlayOneShot(ouch);
+            // add your interaction logic here, e.g., reduce health, knockback, dialogue, etc.
+        }
     }
 }

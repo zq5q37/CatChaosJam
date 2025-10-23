@@ -57,8 +57,25 @@ namespace Platformer.Mechanics
         void Interact()
         {
             Debug.Log("Player interacted with enemy!");
-            if (_audio && ouch) _audio.PlayOneShot(ouch);
-            // add your interaction logic here, e.g., reduce health, knockback, dialogue, etc.
+
+            // Play sound
+            if (_audio && ouch)
+                _audio.PlayOneShot(ouch);
+
+            // Make enemy fall
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            if (rb == null)
+                rb = gameObject.AddComponent<Rigidbody2D>(); // add Rigidbody if missing
+            rb.bodyType = RigidbodyType2D.Dynamic; // enable physics
+            rb.gravityScale = 3f; // fall faster
+            rb.constraints = RigidbodyConstraints2D.None; // allow rotation
+
+            // Disable collider so it doesn't block the player
+            if (_collider != null)
+                _collider.enabled = false;
+
+            // Optional: destroy after 3 seconds
+            Destroy(gameObject, 3f);
         }
     }
 }
